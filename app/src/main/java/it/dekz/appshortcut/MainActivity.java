@@ -36,8 +36,20 @@ public class MainActivity extends AppCompatActivity {
                     .setIntent(new Intent(Intent.ACTION_VIEW, Uri.parse("https://dekzitfz.github.io/")))
                     .build();
 
+            ShortcutInfo dynamicShortcut = new ShortcutInfo.Builder(this, "shortcut_dinamis")
+                    .setShortLabel("Dinamis")
+                    .setLongLabel("buka shortcut dinamis")
+                    .setIcon(Icon.createWithResource(this, R.drawable.ic_today))
+                    .setIntents(
+                            new Intent[]{
+                                    new Intent(Intent.ACTION_MAIN, Uri.EMPTY, this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK),
+                                    new Intent(Intent.ACTION_VIEW, Uri.EMPTY, this, Activity3.class)
+                            })
+                    .build();
+
             //tambahkan objeck ke dalam list
             shortcutInfos.add(shortcutInfo);
+            shortcutInfos.add(dynamicShortcut);
 
             //set shortcut dinamis
             shortcutManager.setDynamicShortcuts(shortcutInfos);

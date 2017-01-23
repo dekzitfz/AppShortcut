@@ -19,7 +19,15 @@
                 android:name="android.app.shortcuts"
                 android:resource="@xml/shortcuts" />
         </activity>
-        <activity android:name=".Activity2"></activity>
+        <activity android:name=".Activity2" />
+        <activity
+            android:name=".Activity3"
+            android:label="Dynamic shortcut activity">
+            <intent-filter>
+                <action android:name="it.dekz.appshortcut.OPEN_DYNAMIC_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>>
+        </activity>
     </application>
 
 </manifest>
