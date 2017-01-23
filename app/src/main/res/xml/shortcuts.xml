@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_today"
+        android:shortcutDisabledMessage="@string/disabled_message"
+        android:shortcutId="shortcut1"
+        android:shortcutLongLabel="@string/long_label"
+        android:shortcutShortLabel="@string/short_label">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="it.dekz.appshortcut.Activity2"
+            android:targetPackage="it.dekz.appshortcut" />
+    </shortcut>
+</shortcuts>
