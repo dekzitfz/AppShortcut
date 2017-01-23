@@ -8,6 +8,10 @@
         android:shortcutLongLabel="@string/long_label"
         android:shortcutShortLabel="@string/short_label">
         <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="it.dekz.appshortcut.MainActivity"
+            android:targetPackage="it.dekz.appshortcut"/>
+        <intent
             android:action="android.intent.action.VIEW"
             android:targetClass="it.dekz.appshortcut.Activity2"
             android:targetPackage="it.dekz.appshortcut" />
