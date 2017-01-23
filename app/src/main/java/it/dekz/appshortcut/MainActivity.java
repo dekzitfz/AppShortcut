@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
             //membuat object shortcutInfo
             ShortcutInfo shortcutInfo = new ShortcutInfo.Builder(this, "web_shortcut")
+                    .setRank(2)
                     .setShortLabel("dekzitfz.github.io")
                     .setLongLabel("Visit dekzitfz github pages")
                     .setIcon(Icon.createWithResource(this, R.drawable.ic_web))
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     .build();
 
             ShortcutInfo dynamicShortcut = new ShortcutInfo.Builder(this, "shortcut_dinamis")
+                    .setRank(1)
                     .setShortLabel("Dinamis")
                     .setLongLabel("buka shortcut dinamis")
                     .setIcon(Icon.createWithResource(this, R.drawable.ic_today))
