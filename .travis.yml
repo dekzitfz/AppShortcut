@@ -12,7 +12,8 @@ android:
     - extra-google-m2repository #Google Play Services
     - extra-android-m2repository #Design Support Library
     - extra-android-support
-    - addon-google_apis-google-24
-
+    - addon-google_apis-google-25
+before_install: 
+  - "chmod +x gradlew"
 script:
    - ./gradlew clean build connectedCheck -PdisablePreDex --stacktrace
