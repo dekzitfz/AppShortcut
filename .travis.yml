@@ -8,6 +8,11 @@ android:
     - tools
     - build-tools-25.0.0
     - android-25
+    - extra-google-google_play_services
+    - extra-google-m2repository #Google Play Services
+    - extra-android-m2repository #Design Support Library
+    - extra-android-support
+    - addon-google_apis-google-24
 
 script:
    - ./gradlew clean build connectedCheck -PdisablePreDex --stacktrace
