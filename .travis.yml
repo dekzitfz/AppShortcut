@@ -14,6 +14,7 @@ android:
     - extra-android-m2repository #Design Support Library
     - extra-android-support
     - addon-google_apis-google-25
+    - sys-img-armeabi-v7a-android-22
 
 before_install: 
   - "chmod +x gradlew"
