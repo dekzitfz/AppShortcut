@@ -18,6 +18,9 @@ android:
 
 before_install: 
   - "chmod +x gradlew"
+  
+after_success:
+    - ./gradlew --stacktrace -b lib/coveralls.gradle coveralls
 
 # Emulator Management: Create, Start and Wait
 before_script:
