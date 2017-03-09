@@ -58,4 +58,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    public int cobatest(){
+        return 1;
+    }
 }
